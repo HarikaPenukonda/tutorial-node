@@ -7,7 +7,7 @@
 // fs.writeFileSync(file, data[, options])
 
 const {readFileSync, writeFileSync} = require('fs')
-
+console.log('start')
 const first = 
     readFileSync(
     './content/first.txt', // path
@@ -27,3 +27,6 @@ writeFileSync(
     `Here is the result : ${first},${second}`, // data
     {flag : 'a'} // option to append
 )
+
+console.log('done with the task')
+console.log('starting the next one')
