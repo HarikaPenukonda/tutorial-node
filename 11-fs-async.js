@@ -34,6 +34,8 @@ The encoding option is ignored if data is a buffer.
 
 const { readFile,writeFile} = require('fs')
 
+console.log('start')
+
 readFile(
     './content/first.txt',
     'utf8', // Hi this is my first text file
@@ -60,7 +62,7 @@ readFile(
                             console.log(err)
                             return
                         }
-                        console.log(result)
+                        console.log('done with this task')
                     }
                     
                 )
@@ -68,3 +70,4 @@ readFile(
         )
     }
     )
+console.log('starting next task')
