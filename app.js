@@ -4,7 +4,8 @@
 // To access them we need to use require
 
 const names = require('./4-names')
-console.log(names) // { john: 'John', peter: 'Peter' }
+// console.log(names) // { john: 'John', peter: 'Peter' }
+const sayHi = require('./5-utils')
 
 sayHi('susan')
 sayHi(john)
